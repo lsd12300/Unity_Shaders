@@ -1,4 +1,5 @@
 // 逐顶点光照
+//   在 顶点着色器中 计算光照
 Shader "RuMenJingYao/6/Diffuse Vertex-Level" {
     Properties {
         _Diffuse ("Diffuse", Color) = (1.0, 1.0, 1.0, 1.0)
