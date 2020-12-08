@@ -1,5 +1,6 @@
 // 逐顶点光照
 //   在 顶点着色器中 计算光照
+//   缺点： 背光面和向光面 交界处会出现 锯齿  (使用 逐像素光照 可改善)
 Shader "RuMenJingYao/6/Diffuse Vertex-Level" {
     Properties {
         _Diffuse ("Diffuse", Color) = (1.0, 1.0, 1.0, 1.0)
