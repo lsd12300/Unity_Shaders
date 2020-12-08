@@ -1,6 +1,8 @@
 
 // 逐像素光照
 //     在 片元着色器中 计算光照
+//      优点： 光照较平滑
+//      缺点： 无光照处 表现为全黑色，无明暗变化 看着像一个平面，细节表现不够 --(使用 半兰伯特光照模型优化)
 Shader "RuMenJingYao/6/Diffuse Pixel-Level" {
     Properties {
         _Diffuse ("Diffuse", Color) = (1.0, 1.0, 1.0, 1.0)
